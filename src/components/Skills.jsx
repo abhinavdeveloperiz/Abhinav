@@ -75,6 +75,7 @@ export default function Skills() {
             <div
               key={index}
               className="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/10 transition"
+              data-aos="zoom-in"
             >
               <h3 className="text-xl font-semibold mb-6 text-cyan-400">
                 {group.category}

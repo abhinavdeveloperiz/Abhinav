@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="py-20 px-6 bg-slate-900 text-white">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE IMAGE */}
-        <div className="flex justify-center">
+        <div className="flex justify-center" data-aos="fade-right">
           <div className="relative">
             <div className="absolute inset-0 bg-cyan-500 blur-3xl opacity-20 rounded-full"></div>
             <img
@@ -17,7 +17,7 @@ export default function About() {
         </div>
 
         {/* RIGHT SIDE CONTENT */}
-        <div>
+        <div data-aos="fade-left">
           <h2 className="text-4xl font-bold mb-6 uppercase">
             About <span className="text-cyan-400">Me</span>
           </h2>

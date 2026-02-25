@@ -44,7 +44,7 @@ export default function PortfolioSites() {
               href={site.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-400 hover:scale-105 transition block"
+              className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-cyan-400 hover:scale-105 transition block"  data-aos="fade-right"
             >
               <h3 className="text-lg font-semibold text-cyan-400">
                 {site.name}

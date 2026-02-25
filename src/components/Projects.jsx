@@ -77,7 +77,7 @@ export default function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-1 transition group block"
+              className="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-1 transition group block" data-aos="fade-left"
             >
               {/* Status badge */}
               {project.status && (
