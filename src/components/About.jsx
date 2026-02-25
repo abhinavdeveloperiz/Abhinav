@@ -11,7 +11,7 @@ export default function About() {
             <img
               src={Image}
               alt="profile"
-              className="relative w-64 h-64 object-cover object-top rounded-2xl border border-slate-700 shadow-lg"
+              className="relative w-80 h-80 object-cover object-top rounded-2xl border border-slate-700 shadow-lg"
             />
           </div>
         </div>
@@ -33,23 +33,23 @@ export default function About() {
             user-friendly digital solutions
           </p>
 
-          <div className="grid grid-cols-2 gap-4 mt-6">
+          <div className="grid grid-cols-2 gap-4 mt-6" data-aos="flip-right" data-aos-delay="200">
             <div className="bg-slate-800 p-4 rounded-xl text-center">
               <h3 className="text-2xl font-bold text-cyan-400">30+</h3>
               <p className="text-slate-400 text-sm">Projects Built</p>
             </div>
 
-            <div className="bg-slate-800 p-4 rounded-xl text-center">
+            <div className="bg-slate-800 p-4 rounded-xl text-center" data-aos="flip-right" data-aos-delay="400">
               <h3 className="text-2xl font-bold text-cyan-400">10+</h3>
               <p className="text-slate-400 text-sm">Technologies</p>
             </div>
 
-            <div className="bg-slate-800 p-4 rounded-xl text-center">
+            <div className="bg-slate-800 p-4 rounded-xl text-center" data-aos="flip-right" data-aos-delay="600">
               <h3 className="text-2xl font-bold text-cyan-400">Fast</h3>
               <p className="text-slate-400 text-sm">Performance</p>
             </div>
 
-            <div className="bg-slate-800 p-4 rounded-xl text-center">
+            <div className="bg-slate-800 p-4 rounded-xl text-center" data-aos="flip-right" data-aos-delay="800">
               <h3 className="text-2xl font-bold text-cyan-400">SEO</h3>
               <p className="text-slate-400 text-sm">Optimized</p>
             </div>

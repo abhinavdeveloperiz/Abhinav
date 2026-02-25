@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 import {
   faPython,
   faHtml5,
@@ -34,10 +35,12 @@ export default function Skills() {
     {
       category: "Frontend",
       items: [
+        { name: "React", icon: faReact },
         { name: "HTML", icon: faHtml5 },
         { name: "CSS", icon: faCss3Alt },
         { name: "Tailwind CSS", icon: faCss3Alt },
         { name: "Bootstrap", icon: faCss3Alt },
+        
       ],
     },
     {
