@@ -1,7 +1,7 @@
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "E-Commerce Website",
       description:
         "Full-stack Django application with React frontend, payment integration, and PostgreSQL database.",
       tech: [
