@@ -1,7 +1,7 @@
 export default function Projects() {
   const projects = [
     {
-      title: "E-Commerce Website",
+      title: "Jaji's E-Commerce",
       description:
         "Full-stack Django application with React frontend, payment integration, and PostgreSQL database.",
       tech: [
@@ -17,11 +17,12 @@ export default function Projects() {
     },
 
     {
-      title: "E-Commerce Website",
+      title: "Aurora E-Commerce",
       description:
         "Full-featured e-commerce platform with secure authentication, product management, and seamless online payments.",
       tech: [
         "Django",
+        "MySQL",
         "HTML",
         "CSS",
         "Bootstrap",
@@ -38,10 +39,10 @@ export default function Projects() {
         "A recruitment platform connecting job seekers with employers, featuring secure login and job management.",
       tech: [
         "Django",
+        "MySQL",
         "HTML",
         "CSS",
-        "Tailwind CSS",
-        "Google OAuth",
+        "Bootstrap",
         "cPanel Deployment",
       ],
       link: "https://gimsplacements.com/",
@@ -51,13 +52,7 @@ export default function Projects() {
       title: "KingKarak CRM",
       description:
         "CRM system for managing multiple branches, tracking sales performance, and monitoring business operations. Currently under active development and will be fully live soon.",
-      tech: [
-        "Django",
-        "MySQL",
-        "Branch Management",
-        "Sales Tracking",
-        "cpanel Deployment",
-      ],
+      tech: ["Django", "MySQL", "HTML", "Tailwind CSS", "cPanel Deployment"],
       link: "https://king-karakk-crm.up.railway.app",
       status: "Ongoing",
     },
@@ -77,7 +72,8 @@ export default function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-1 transition group block" data-aos="fade-left"
+              className="bg-slate-950 border border-slate-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-1 transition group block"
+              data-aos="fade-left"
             >
               {/* Status badge */}
               {project.status && (

@@ -1,62 +1,75 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import { faServer, faDatabase, faCloud } from "@fortawesome/free-solid-svg-icons";
+
 import {
-  faPython,
-  faHtml5,
-  faCss3Alt,
-  faGitAlt,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faServer,
-  faDatabase,
-  faCloud,
-} from "@fortawesome/free-solid-svg-icons";
+  SiPython,
+  SiDjango,
+  SiFastapi,
+  SiRedis,
+  SiPostgresql,
+  SiMysql,
+  SiSqlite,
+  SiReact,
+  SiHtml5,
+  SiCss3,
+  SiTailwindcss,
+  SiBootstrap,
+  SiRailway,
+  SiRender,
+  SiVercel,
+  SiGithub,
+  SiCpanel
+} from "react-icons/si";
 
 export default function Skills() {
   const skills = [
     {
       category: "Backend",
       items: [
-        { name: "Python", icon: faPython },
-        { name: "Django", icon: faServer },
-        { name: "Django REST Framework", icon: faServer },
-        { name: "FastAPI (Learning)", icon: faServer },
-        { name: "Redis", icon: faServer },
+        { name: "Python", icon: <SiPython /> },
+        { name: "Django", icon: <SiDjango /> },
+        {
+          name: "Django REST Framework",
+          icon: <FontAwesomeIcon icon={faServer} />,
+        },
+        { name: "FastAPI (Learning)", icon: <SiFastapi /> },
+        { name: "Redis", icon: <SiRedis /> },
       ],
     },
     {
       category: "Database",
       items: [
-        { name: "PostgreSQL", icon: faDatabase },
-        { name: "MySQL", icon: faDatabase },
-        { name: "SQLite", icon: faDatabase },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "SQLite", icon: <SiSqlite /> },
       ],
     },
     {
       category: "Frontend",
       items: [
-        { name: "React", icon: faReact },
-        { name: "HTML", icon: faHtml5 },
-        { name: "CSS", icon: faCss3Alt },
-        { name: "Tailwind CSS", icon: faCss3Alt },
-        { name: "Bootstrap", icon: faCss3Alt },
-        
+        { name: "React", icon: <SiReact /> },
+        { name: "HTML", icon: <SiHtml5 /> },
+        { name: "CSS", icon: <SiCss3 /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+        { name: "Bootstrap", icon: <SiBootstrap /> },
       ],
     },
     {
       category: "Deployment",
       items: [
-        { name: "Railway", icon: faCloud },
-        { name: "Render", icon: faCloud },
-        { name: "PythonAnywhere", icon: faCloud },
-        { name: "cPanel Hosting", icon: faCloud },
+        { name: "Railway", icon: <SiRailway /> },
+        { name: "Render", icon: <SiRender /> },
+        { name: "Vercel", icon: <SiVercel /> },
+        { name: "PythonAnywhere", icon: <FontAwesomeIcon icon={faCloud} /> },
+        { name: "cPanel Hosting", icon: <FontAwesomeIcon icon={faCloud} /> },
       ],
     },
     {
       category: "Tools",
       items: [
-        { name: "Git", icon: faGitAlt },
-        { name: "GitHub", icon: faGitAlt },
+        { name: "Git", icon: <FontAwesomeIcon icon={faGitAlt} /> },
+        { name: "GitHub", icon: <SiGithub /> },
       ],
     },
   ];
@@ -90,10 +103,7 @@ export default function Skills() {
                     key={i}
                     className="flex items-center gap-3 text-slate-300"
                   >
-                    <FontAwesomeIcon
-                      icon={skill.icon}
-                      className="text-cyan-400"
-                    />
+                    <span className="text-cyan-400 text-lg">{skill.icon}</span>
                     <span>{skill.name}</span>
                   </div>
                 ))}
