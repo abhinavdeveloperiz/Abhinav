@@ -41,7 +41,7 @@ export default function Hero() {
           data-aos="fade-right"
           data-aos-delay="400"
         >
-          Python Full-Stack Developer
+          Python FullStack Developer
         </h2>
 
         <p
